@@ -17,6 +17,8 @@ Options:
 --daemonize | -d Whether or not to daemonize, default is false
 --help | -h  This text
 
+Script (dameonized or not) will respond to SIGHUP by reopening it's output file, for log-rolling.
+
 IMPORTANT: Once you run this, it will add a subscriber to the source JLog.  If you decide to stop running
 this for an extended period of time/forever, you MUST IMMEDIATELY remove that subscriber with
 
